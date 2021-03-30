@@ -1,0 +1,10 @@
+torch
+numpy
+yacs
+Pillow
+torchvision
+tensorboardX
+opencv-python
+scikit-learn
+pytorch_metric_learning
+pandas
