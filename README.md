@@ -2,7 +2,7 @@
 
 # Probabilistic Ranking-based Instance Selection with Memory (PRISM)
 
-Code for the CVPR 2021 paper "Noise-resistant Deep Metric Learning with Ranking-based Instance Selection" (paper link coming soon).
+Code for the CVPR 2021 paper "Noise-resistant Deep Metric Learning with Ranking-based Instance Selection" [Arxiv](https://arxiv.org/abs/2103.16047).
 
 ### Installation
 
