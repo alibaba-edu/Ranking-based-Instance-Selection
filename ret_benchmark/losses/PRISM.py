@@ -10,7 +10,7 @@ from ret_benchmark.utils.log_info import log_info
 class PRISM(nn.Module):
     def __init__(self, cfg):
         super(PRISM, self).__init__()
-        self.b=1-cfg.NOISE.NOISE_RATE
+        self.noise_rate=cfg.NOISE.NOISE_RATE
         self.margin_window=[]
         self.window_size=int(cfg.NOISE.WINDOW_SIZE)
         num_classes=cfg.num_classes
@@ -51,7 +51,7 @@ class PRISM(nn.Module):
                         C.append(softmax_loss)
                 C=torch.Tensor(C)
                 idx_sorted = torch.argsort(C)
-                to_remove=idx_sorted[:int(self.b*len(C))]
+                to_remove=idx_sorted[:int(self.noise_rate*len(C))]
 
 
                 #update window
